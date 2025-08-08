@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare Codeforces Handles</title>
+  <link rel="stylesheet" href="/compare.css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Compare Codeforces Handles</h1>
+
+  <div class="input-section">
+    <input type="text" id="handle1" placeholder="Enter first handle" />
+    <input type="text" id="handle2" placeholder="Enter second handle" />
+    <button onclick="compareHandles()">Compare</button>
+  </div>
+
+  <div id="comparison-result" class="results-container">
+  <div class="user-box">
+    <h2 class="user-header" id="user1-name"></h2>
+    <p class="user-stat">Rating: <span id="user1-rating"></span></p>
+    <p class="user-stat">Max Rating: <span id="user1-max-rating"></span></p>
+    <p class="user-stat">Rank: <span id="user1-rank"></span></p>
+  </div>
+
+  <div class="user-box">
+    <h2 class="user-header" id="user2-name"></h2>
+    <p class="user-stat">Rating: <span id="user2-rating"></span></p>
+    <p class="user-stat">Max Rating: <span id="user2-max-rating"></span></p>
+    <p class="user-stat">Rank: <span id="user2-rank"></span></p>
+  </div>
+</div>
+
+<div class="chart-container">
+  <h2 style="text-align: center; margin-top: 30px;">Overall Skill Comparison Radar Chart</h2>
+  <canvas id="radarChart" width="400" height="400"></canvas>
+</div>
+
+<div class="comparison-section">
+  <h2>Skill Comparison (Bar Charts)</h2>
+  <div class="bar-chart-row">
+    <div class="chart-wrapper"><canvas id="barChart-solved"></canvas></div>
+    <div class="chart-wrapper"><canvas id="barChart-contests"></canvas></div>
+    <div class="chart-wrapper"><canvas id="barChart-avgDifficulty"></canvas></div>
+    <div class="chart-wrapper"><canvas id="barChart-upsolveRatio"></canvas></div>
+  </div>
+</div>
+
+
+ <script src="/compare.js"></script>
+
+</body>
+</html>

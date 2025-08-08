@@ -1,0 +1,165 @@
+/* compare.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e1b;
+  font-family: 'Orbitron', sans-serif;
+  color: #e0e0e0;
+  background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFya3xlbnwwfHwwfHx8MA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+/* Container to center content */
+.container {
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Inputs and buttons */
+input {
+  padding: 10px;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* For future chart display */
+canvas {
+  width: 100% !important;
+  max-height: 400px;
+  margin-top: 2rem;
+}
+
+/* Optional glowing text effect */
+#compare-section p {
+  font-size: 16px;
+  color: #fff;
+  margin: 10px 0;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+}
+#results-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.stats-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+  text-align: left;
+  box-shadow: 0 0 10px #00ffff66;
+  backdrop-filter: blur(4px);
+}
+#comparison-result {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.user-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 250px;
+  text-align: left;
+  box-shadow: 0 0 10px #00ffff66;
+  backdrop-filter: blur(4px);
+}
+
+.user-header {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 0 0 6px #ff00ff88;
+  margin-bottom: 10px;
+}
+
+.user-stat {
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 0 0 3px #ffffff77;
+  margin: 5px 0;
+}
+.user-header {
+  flex: 1;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff00ff;
+  text-shadow: 0 0 6px #ff00ff88;
+}
+
+.user-stat {
+  flex: 1;
+  color: #ffffff;
+  text-shadow: 0 0 3px #ffffff77;
+}
+.chart-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* .comparison-section {
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+} */
+.bar-chart-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: nowrap; /* <- Force same line */
+  margin-top: 20px;
+  overflow-x: auto; /* Optional: scroll if too wide */
+}
+
+.chart-wrapper {
+  width: 250px;
+  height: 300px;
+  background-color: #111;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+.chart-wrapper canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+
