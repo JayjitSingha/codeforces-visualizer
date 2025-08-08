@@ -1,5 +1,5 @@
 ```markdown
-# ⚡ Codeforces Visualizer
+# Codeforces Visualizer
 
 A cyberpunk-styled, hardcore aesthetic web visualizer for Codeforces that gives you deep insights into your competitive programming journey.
 
@@ -55,7 +55,7 @@ CP-Visualizer/
 
 ---
 
-## ⚙️ How to Use
+## How to Use
 
 ```bash
 git clone https://github.com/JayjitSingha/codeforces-visualizer.git
@@ -75,7 +75,7 @@ and you will find the screenshots
 
 ## Inspiration & Motivation
 
-This project was created as a part of **KamandPrompt** from IIT Mandi and reflects my passion for:
+This project was created to help me get better reflects my passion for:
 - Competitive Programming
 - High-quality Visual Design
 - Deep, aesthetic analysis of coding progress
